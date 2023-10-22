@@ -30,3 +30,23 @@ setInterval(()=>{
       }
 
 },10)
+
+
+let menubar = document.querySelector(".menu");
+let navItemsDiv = document.querySelector(".nav-items");
+let navItems = document.querySelectorAll(".nav-items a");
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (navItemsDiv.style.height == `calc(100vh - 10.6rem)`) {
+      navItemsDiv.style.height = 0;
+    }
+  });
+});
+menubar.addEventListener("click", toggleMenu);
+function toggleMenu() {
+  if (navItemsDiv.style.height == `calc(100vh - 10.6rem)`) {
+    navItemsDiv.style.height = 0;
+  } else {
+    navItemsDiv.style.height = `calc(100vh - 10.6rem)`;
+  }
+}
