@@ -3,10 +3,10 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 0,
   effect: "fade",
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
   loop: true,
   pagination: {
     el: ".swiper-pagination",
@@ -114,7 +114,7 @@ var swiper = new Swiper(".mySwiper3", {
 });
 
 let slides='';
-for(var i=1;i<=5;i++){
+for(var i=1;i<=10;i++){
   slides+=`<div class="swiper-slide">
   <img class="testimonial-img" src="testimonials/${i}.jpg" alt="" />
 </div>`
