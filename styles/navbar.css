@@ -1,0 +1,36 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(0.25turn, #010101, #3015087d);
+    background-size: cover;
+    width: 100%;
+    padding: 0.7rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+  }
+  nav img {
+    height: 8.9rem;
+  }
+  nav div {
+    display: flex;
+    align-items: center;
+  }
+  nav .menu {
+    display: none;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+  }
+  .nav-items a {
+    font-size: 1.7rem;
+    color: white;
+    margin: 0 1.5rem;
+    text-transform: uppercase;
+  }
+  .nav-items a:hover {
+    color: var(--yellow);
+  }
