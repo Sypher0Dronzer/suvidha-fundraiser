@@ -525,3 +525,23 @@ text-align: center;
   color: white;
 }
 
+/* preloader */
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* background-image:linear-gradient(#FFBE3D,#F06543) ; */
+  background: white;
+
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+.hide-preloader{
+  z-index: -999;
+  visibility: hidden;
+}

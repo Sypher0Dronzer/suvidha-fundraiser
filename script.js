@@ -145,3 +145,12 @@ var swiper = new Swiper(".mySwiper4", {
     },
   }
 });
+
+
+
+// preloader
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", function () {
+  preloader.classList.add("hide-preloader");
+});
