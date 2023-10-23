@@ -4,7 +4,8 @@ var swiper = new Swiper(".mySwiper6", {
   centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 2000,
+    delay: 3000,
+    disableOnInteraction: false,
   },
   slidesPerView: "auto",
   coverflowEffect: {
@@ -17,7 +18,7 @@ var swiper = new Swiper(".mySwiper6", {
 });
 
 // back to top
-let sec2 = document.querySelector(".books");
+let sec2 = document.querySelector(".food");
 let toTop = document.querySelector(".back-to-top");
 setInterval(()=>{
     if (scrollY > (sec2.offsetTop - 650)) {
@@ -50,3 +51,10 @@ function toggleMenu() {
     navItemsDiv.style.height = `calc(100vh - 10.6rem)`;
   }
 }
+
+// ------preloader-----------
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", function () {
+  preloader.classList.add("hide-preloader");
+});

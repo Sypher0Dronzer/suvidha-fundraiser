@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Swiper demo</title>
+    <title>Gallery</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
@@ -12,6 +12,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <!-- ---------favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/gallery.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
@@ -39,8 +42,8 @@
 
         <div class="nav-items">
           <a href="index.html">Home</a>
-          <a href="index.html">About Us</a>
-          <a href="index.html">Events</a>
+          <a href="index.html#about-us">About Us</a>
+          <a href="index.html#events">Events</a>
           <a href="#">Gallery</a>
           <div class="btn-div">
               <button class="btn btn-yellow">Apply For Internship</button>
@@ -89,7 +92,7 @@
 
 
     <!-- ------book distribution pics---------- -->
-    <h2 class="event-gallery  books">Book Distribution Event</h2>
+    <h2 class="event-gallery">Book Distribution Event</h2>
 
     <!-- Swiper -->
     <div class="swiper mySwiper6">
@@ -124,7 +127,7 @@
 
 
     <!-- ---------food distribution--------- -->
-    <h2 class="event-gallery">Food Distribution</h2>
+    <h2 class="event-gallery food">Food Distribution</h2>
 
     <!-- Swiper -->
     <div class="swiper mySwiper6">
@@ -282,6 +285,11 @@
         <i class="fa fa-angle-up" aria-hidden="true"></i>
       </button>
     </a>
+
+    <!-- preloader -->
+    <div class="preloader">
+      <img src="images/Dual Ball-1s-201px.gif" alt="preloader" class="preloader_item">
+    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
