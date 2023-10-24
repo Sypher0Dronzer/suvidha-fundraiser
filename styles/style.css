@@ -179,6 +179,8 @@ body {
 .swiper {
   margin-left: auto;
   margin-right: auto;
+  min-height: auto !important;
+
 }
 
 .arrow-head {
