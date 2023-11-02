@@ -135,7 +135,7 @@ p {
 .btn-yellow {
   color: white;
   background-color: var(--btn-yellow);
-  border: 2px solid --btn-yellow;
+  border: 2px solid var(--btn-yellow);
 }
 .btn-yellow:hover {
   background-color: #c6770f;
@@ -155,6 +155,9 @@ p {
   display: flex;
   gap: 2rem;
   z-index: 2;
+}
+.nav-apply-intern{
+  width: 100%;
 }
 
 /*------- Swiper js ----------*/
@@ -308,6 +311,9 @@ body {
 }
 .mySwiper3{
   min-height:65vh;  
+}
+.testimonial-btn{
+  margin-top: 4rem;
 }
 
 
