@@ -23,7 +23,7 @@ html {
   box-sizing: border-box;
   border: none;
   text-decoration: none;
-  transition: 0.2s linear;
+  transition: 0.3s linear;
   font-family: Poppins;
 }
 /* ---custon scrollbar for chrome---- */
@@ -156,6 +156,11 @@ p {
   gap: 2rem;
   z-index: 2;
 }
+.btn-div .donate-link .btn{
+width: 100%;}
+.nav-items .btn-div{
+  gap:0
+}
 .nav-apply-intern{
   width: 100%;
 }
@@ -248,19 +253,118 @@ body {
   color: var(--yellow);
   text-align: center;
 }
-.section2 p {
-  text-align: center;
-}
 .section2 p span {
   color: var(--btn-yellow);
   font-family: "Kaushan Script", cursive;
   font-weight: 500;
   font-size: 2.2rem;
 }
+.abt-us-div{
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.img-count{
+  position: relative;
+  max-width: 550px;
+}
+.counter-div{
+  position: absolute;
+  padding: 1.5rem 1rem;
+  background-image: linear-gradient(0.25turn, #010101, #240e03f6);
+  border-radius: 20px;
+  color: white;
+  left: 0.5%;
+  bottom: -50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 99%;
+  gap: .5rem;
+  
+}
+.counter-div p{
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.counter-div span{
+  font-size: 2.6rem;
+}
+.count-box{
+  position: relative;
+}
+.divider{
+  position: absolute;
+  right: -1%;
+  content: '';
+  background-color: var(--yellow);
+  height: 95%;
+  width: 2px;
+  border-radius: 20px;
+}
+
+.abt-us-left{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.abt-us-right{
+  /* padding: 2rem; */
+  position: relative;
+  background-image: linear-gradient(0.25turn, #010101, #240e03f6);
+    /* background-color: #FFF3DA; */
+  color: white;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.img-count img{
+  width: 100%;
+  min-width: 300px;
+  border-radius: 40px;
+}
+.selector{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+  position: relative;
+  background-color: var(--yellow);
+}
+.selector .selected{
+  background-image: linear-gradient(0.25turn, #010101, #240e03f6);
+  color: var(--yellow);
+}
+
+.selector p{
+  padding: 1.5rem 0;
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom:0;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+
+}
+/* .details{
+display: flex;
+} */
+.details{
+  display: flex;
+  position: absolute;
+  left: 5%;
+  width: 100%;
+  column-gap: 50px;
+}
+.details *{
+  width: 400px;
+}
+
 
 /* ----------section 3 WHAT WE DO------ */
 .section3 {
-  margin-top: 5rem;
+  margin-top: 7rem;
   background-image: linear-gradient(0.25turn, #010101, #240e03f6);
   display: flex;
   flex-direction: column;
@@ -406,6 +510,7 @@ margin-top: 2rem;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  transition: all .5s;
 
 }
 .section7 .img-div{
@@ -422,6 +527,9 @@ margin-top: 2rem;
 .section7 .img-div:hover .details-div{
   transform: translateY(-100%);
 }
+.section7 .img-div:hover .details-div *{
+  opacity: 1;
+}
 .section7 .details-div{
   position: absolute;
   top: 100%;
@@ -435,6 +543,11 @@ margin-top: 2rem;
   padding: 2rem 0;
   border-radius: 30px 30px 0 0;
   z-index: 10;
+  transition: all .6s;
+}
+.details-div *{
+  opacity: 0;
+  transition: all 1s;
 }  
 
 .section7 .details-div h4{

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
 
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png" />
     <!-- Js swiper cdn -->
     <link
       rel="stylesheet"
@@ -46,7 +46,11 @@
                 Apply For Internship
               </button>
             </a>
-            <button class="btn btn-transparent">Donate Now</button>
+            <a href="donate.html"
+              ><button class="btn btn-transparent nav-apply-intern">
+                Donate Now
+              </button></a
+            >
           </div>
         </div>
         <i class="fa fa-bars menu" aria-hidden="true"></i>
@@ -70,7 +74,9 @@
               </p>
 
               <div class="btn-div">
-                <button class="btn btn-yellow">Donate Now</button>
+                <a href="donate.html" class="donate-link">
+                  <button class="btn btn-yellow">Donate Now</button>
+                </a>
                 <button class="btn btn-transparent">Watch Video</button>
               </div>
             </div>
@@ -88,7 +94,10 @@
               </p>
 
               <div class="btn-div">
-                <button class="btn btn-yellow">Donate Now</button>
+                <a href="donate.html" class="donate-link">
+                  <button class="btn btn-yellow">Donate Now</button>
+                </a>
+
                 <button class="btn btn-transparent">Watch Video</button>
               </div>
             </div>
@@ -106,7 +115,9 @@
               </p>
 
               <div class="btn-div">
-                <button class="btn btn-yellow">Donate Now</button>
+                <a href="donate.html" class="donate-link">
+                  <button class="btn btn-yellow">Donate Now</button>
+                </a>
                 <button class="btn btn-transparent">Watch Video</button>
               </div>
             </div>
@@ -125,7 +136,9 @@
               </p>
 
               <div class="btn-div">
-                <button class="btn btn-yellow">Donate Now</button>
+                <a href="donate.html" class="donate-link">
+                  <button class="btn btn-yellow">Donate Now</button>
+                </a>
                 <button class="btn btn-transparent">Watch Video</button>
               </div>
             </div>
@@ -144,26 +157,72 @@
     <!-- -------about us------ -->
     <div id="about-us" class="section2">
       <h2>About Us</h2>
-      <p>
-        Suvidha Foundation is a non-profit organization dedicated to
-        <span>providing accessible education</span> to financially disadvantaged
-        individuals. Our mission is to <span>empower young minds</span>,
-        regardless of economic background, and offer equal opportunities for a
-        promising future. We bridge the gap between education and practical
-        skills through <span>student internships</span>, provide mentorship to
-        help students achieve their goals, and welcome volunteers to contribute
-        to our programs. <br /><br />
 
-        Our mission is to <span>inspire</span>, <span>foster innovation</span>,
-        and <span>promote integration</span>, ultimately nurturing the next
-        generation. We also run <span>food donation</span> and
-        <span>awareness campaigns</span> in rural areas. Our vision is to create
-        the next generation of entrepreneurs through skill-based education,
-        offering opportunities, training, and quality education worldwide.
-        Suvidha Foundation is committed to empowering individuals through
-        education and support, with a goal of making a lasting impact on
-        education and creating a <span>brighter</span> future for all.
-      </p>
+      <div class="abt-us-div">
+        <div class="abt-us-left">
+          <div class="img-count">
+            <img src="https://suvidhafoundationedutech.org/img/about.jpg" alt="" />
+            <div class="counter-div">
+              <div class="count-box">
+                <div class="divider"></div>
+                <p><span class="count" data-limit="15">0</span> +</p>
+                <p>Countries</p>
+              </div>
+              <div class="count-box">
+                <div class="divider"></div>
+                <p><span class="count" data-limit="300">0</span><span>K</span> +</p>
+                <p>Volunteers</p>
+              </div>
+              <div class="count-box">
+                <div class="divider"></div>
+                <p><span class="count" data-limit="700">0</span> <span>K</span> +</p>
+                <p>Kids Helped</p>
+              </div>
+              <div class="count-box">
+                <p><span class="count" data-limit="15">0</span> <span>L</span> +</p>
+                <p>Trees Planted</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="abt-us-right">
+          <div class="selector">
+            <p data-select="0" class="selected">About</p>
+            <p data-select="1">Mission</p>
+            <p data-select="2">Vision</p>
+          </div>
+          <div class="details">
+            <div class="about detail">
+              <p>
+                Suvidha Mahila Mandal is a non-profit organization working to
+                <span>impart education</span> among the financially challenged sections to help
+                them realize parity in education and strength of little minds in
+                building a promising future. The organization has provisions of
+                <span>student internships</span>, student mentorship and the scope to
+                volunteer. Through these programmes, the organization aims to
+                achieve the vision of imparting innovative education that stays
+                with the students forever and equip them for the unforeseen
+                future.
+              </p>
+            </div>
+            <div class="mission detail">
+              <p>
+                To Inspire Students, help them <span>Innovate</span> and let them <span>Integrate</span> to
+                build the next generation humankind. <br> To Run <span>Food Donation</span>  and
+                <span>Awareness Campaign</span> In Rural Region.
+              </p>
+            </div>
+            <div class="vision detail">
+              <p>
+                To build Next Generation Entrepreneur, by providing them a
+                Skill-Based Education. <br> To <span>Provide Internship</span> , <span>Training</span> and
+                <span>Workshops</span> and <span>Quality Education</span> All Over The World.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </div>
 
     <!-- ---------what we do-------- -->
@@ -329,7 +388,7 @@
               </div>
             </div>
           </div>
-        </div>        
+        </div>
       </div>
     </div>
 
@@ -342,7 +401,8 @@
             <i class="fa-solid fa-user-group"></i>
             <h3>Become a Volunteer</h3>
             <p>
-              Join us as a volunteer and be the change you want to see in your community through our impactful NGO programs.
+              Join us as a volunteer and be the change you want to see in your
+              community through our impactful NGO programs.
             </p>
             <button class="btn btn-yellow">Join Us Now</button>
           </div>
@@ -352,19 +412,28 @@
             <i class="fa-solid fa-hand-holding-dollar"></i>
             <h3>Donate to Support</h3>
             <p>
-              Your donation can make a world of difference; help us create a brighter future through your generous support.
+              Your donation can make a world of difference; help us create a
+              brighter future through your generous support.
             </p>
-            <button class="btn btn-yellow">Donate Now</button>
+            <a href="donate.html">
+              <button class="btn btn-yellow">Donate Now</button>
+            </a>
           </div>
         </div>
         <div class="flex-item-box">
           <div class="flex-item">
             <i class="fa-solid fa-hand-holding-hand"></i>
-            <h3>Become a partner</h3>
+            <h3>Connect With Us</h3>
             <p>
-              Join us as a partner and together, let's work towards a shared vision of positive change and progress.
+              Join us as a partner and together, let's work towards a shared
+              vision of positive change and progress.
             </p>
-            <button class="btn btn-yellow">Learn More</button>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfAaaHU-k256CY6_83JPBOYeVFtKuKBvqMJb7oBIsDLKRmwNg/viewform"
+              target="_blank"
+            >
+              <button class="btn btn-yellow">Contact Us</button>
+            </a>
           </div>
         </div>
       </div>
@@ -451,10 +520,12 @@
           </div>
         </div>
       </div>
-      <a href="https://drive.google.com/drive/u/1/folders/1lCc5YL2t6eFN3nlk9mgseCXCg7kOdty8" target="_blank">
+      <a
+        href="https://drive.google.com/drive/u/1/folders/1lCc5YL2t6eFN3nlk9mgseCXCg7kOdty8"
+        target="_blank"
+      >
         <button class="btn btn-yellow testimonial-btn">View More</button>
       </a>
-
     </div>
 
     <!-- --------colaborative initiatives-------- -->
@@ -496,30 +567,36 @@
           <ul>
             <li>
               <a
-                href="https://suvidhafoundationedutech.org/Themes/doc/80G_APROVAL.pdf" target="_blank"
+                href="https://suvidhafoundationedutech.org/Themes/doc/80G_APROVAL.pdf"
+                target="_blank"
                 >80G Cetificate</a
               >
             </li>
             <li>
               <a
-                href="https://suvidhafoundationedutech.org/Themes/doc/12A_APPROVAL.pdf" target="_blank"
+                href="https://suvidhafoundationedutech.org/Themes/doc/12A_APPROVAL.pdf"
+                target="_blank"
                 >12A Certificate</a
               >
             </li>
             <li>
-              <a href="https://suvidhafoundationedutech.org/Themes/doc/CSR.PDF" target="_blank"
+              <a
+                href="https://suvidhafoundationedutech.org/Themes/doc/CSR.PDF"
+                target="_blank"
                 >CSR Certificate</a
               >
             </li>
             <li>
               <a
-                href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_darpan_portal_registration.pdf" target="_blank"
+                href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_darpan_portal_registration.pdf"
+                target="_blank"
                 >Suvidha Darpan Registration</a
               >
             </li>
             <li>
               <a
-                href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_pan_card.pdf" target="_blank"
+                href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_pan_card.pdf"
+                target="_blank"
                 >Suvidha Pan Card</a
               >
             </li>
@@ -529,7 +606,9 @@
           <h3>Useful Links</h3>
           <ul>
             <li>
-              <a href="https://suvidhafoundationedutech.org/verify.php" target="_blank"
+              <a
+                href="https://suvidhafoundationedutech.org/verify.php"
+                target="_blank"
                 >Verify Your Certificate</a
               >
             </li>
@@ -548,9 +627,21 @@
           </ul>
 
           <div class="icons">
-            <a href="https://www.facebook.com/suvidhamahilamandal/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/suvidha_mahila_mandal/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/suvidhamahilamandal/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a
+              href="https://www.facebook.com/suvidhamahilamandal/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/suvidha_mahila_mandal/?igshid=YmMyMTA2M2Y%3D"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/suvidhamahilamandal/"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -562,10 +653,13 @@
       </p>
     </footer>
 
-
     <!-- preloader -->
     <div class="preloader">
-      <img src="images/Dual Ball-1s-201px.gif" alt="preloader" class="preloader_item">
+      <img
+        src="images/Dual Ball-1s-201px.gif"
+        alt="preloader"
+        class="preloader_item"
+      />
     </div>
 
     <!-- ----------back to top btn----- -->
@@ -576,6 +670,9 @@
     </a>
 
     <!-- -----------Script------------- -->
+    <!-- gsap cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>

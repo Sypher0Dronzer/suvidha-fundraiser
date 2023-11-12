@@ -26,9 +26,9 @@ nav {
     cursor: pointer;
   }
   .nav-items a {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: white;
-    margin: 0 1.5rem;
+    margin: 0 1.2rem;
     text-transform: uppercase;
   }
   .nav-items a:hover {

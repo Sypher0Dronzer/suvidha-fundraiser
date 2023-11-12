@@ -1,0 +1,53 @@
+:root {
+  --yellow: rgb(239, 168, 76);
+  --btn-yellow: #ffa026;
+  --playFair-font: "Playfair Display", serif;
+}
+
+html,
+body {
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.donation-div {
+  display: flex;
+  background-color: aliceblue;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  padding: 4rem;
+  row-gap: 3rem;
+  margin: 3rem 0 0 0;
+}
+.account-details {
+  font-family: poppins;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.account-details h2{
+    font-size: 3.4rem;
+    font-family: var(--playFair-font);
+
+}
+.account-details p{
+    font-size: 1.8rem;
+}
+.qr-code {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.qr-code h2{
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+    font-family: var(--playFair-font);
+}
