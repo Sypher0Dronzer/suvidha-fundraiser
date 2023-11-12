@@ -233,13 +233,13 @@ gsap.from("nav img", {
 gsap.from(".nav-item", {
   y:-400,
   opacity:0,
-  stagger:0.5
+  // stagger:0.5
 
 })
 gsap.from(".nav-items .btn-div", {
   scale:0,
   opacity:0,
-  stagger:0.5
+  // stagger:0.5
 })
 
 // titl box animation 
