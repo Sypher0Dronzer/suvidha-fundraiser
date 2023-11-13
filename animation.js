@@ -192,7 +192,6 @@ gsap.fromTo(".events .char",{
   opacity:0,
   y:80,
   duration:0.05,
-  ease:"bounce",
   stagger:{each:0.05},
   scrollTrigger: {
     trigger: ".events .char",
@@ -206,6 +205,8 @@ gsap.fromTo(".events .char",{
   opacity:1,
   y:0,
   duration:0.05,
+  ease:"bounce",
+
   stagger:{each:0.05},
   scrollTrigger: {
     trigger: ".events .char",
@@ -214,6 +215,61 @@ gsap.fromTo(".events .char",{
     start: "top 85%",
     end: "top 65%",
     scrub:2
+  },
+})
+
+gsap.from(".section8 .event",{
+  opacity:0,
+  y:50,
+  stagger:{each:1},
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section8 .event",    
+    // markers:true,
+    start: "top 60%",
+    end: "top 30%",
+    scrub:1,
+  }
+})
+
+
+gsap.from(".section4",{
+  x:-1000,
+  opacity:0,
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section4",
+    // markers:true,    
+    start: "top 90%",
+    end: "top 40%",
+    scrub:2,
+  },
+
+})
+
+gsap.from(".section4 h2 , .section4 .flex-item-box",{
+  opacity:0,
+  x:-150,
+  stagger:{each:1},
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section4 h2 , .section4 .flex-item-box",
+    // markers:true,    
+    start: "top 45%",
+    end: "top 30%",
+    scrub:1,
+  },
+})
+gsap.from(".section4 .flex-item-box i",{
+  opacity:0,
+  stagger:{each:1},
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section4 .flex-item-box i",
+    markers:true,    
+    start: "top 45%",
+    end: "top 25%",
+    scrub:1,
   },
 })
 

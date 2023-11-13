@@ -33,4 +33,7 @@ nav {
   }
   .nav-items a:hover {
     color: var(--yellow);
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+
   }
