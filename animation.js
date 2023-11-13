@@ -65,19 +65,38 @@ gsap.fromTo(".title-box .btn-div a,.title-box .btn-div button", {
 );
 
 //--------- about us-------------
-gsap.from("#about-us h2", {
-  opacity: 0,
-  duration: .5,
-  y: 400,
+Splitting();
+const abtUsH2 = document.querySelector('#about-us h2');
+const results2 = Splitting({ target: abtUsH2, by: 'chars' });
+gsap.fromTo(".char",{
+  opacity:0,
+  y:80,
+  duration:0.05,
+  ease:"bounce",
+  stagger:{each:0.05},
+  scrollTrigger: {
+    trigger: "#about-us h2",
+    scroller: "body",
+    // markers: true,
+    start: "top 80%",
+    end: "top 65%",
+    scrub:5
+  },
+},{
+  opacity:1,
+  y:0,
+  duration:0.05,
+  stagger:{each:0.05},
   scrollTrigger: {
     trigger: "#about-us h2",
     scroller: "body",
     // markers: true,
     start: "top 85%",
-    end: "top 70%",
-    scrub:5
+    end: "top 65%",
+    scrub:2
   },
-});
+})
+
 gsap.from(".abt-us-left", {
   opacity: 0,
   duration:1,
@@ -86,10 +105,9 @@ gsap.from(".abt-us-left", {
     scroller:"body",
     trigger:".abt-us-left",
     start: "top 85%",
-    end: "top 70%",
-    markers: true,
-
-    scrub:4,
+    end: "top 65%",
+    // markers: true,
+    scrub:2,
   },
 });
 
@@ -101,35 +119,101 @@ gsap.from(".abt-us-right", {
     scroller:"body",
     trigger:".abt-us-left",
     start: "top 85%",
-    end: "top 70%",
-    scrub:4
+    end: "top 65%",
+    scrub:2
   },
 });
 gsap.fromTo(".abt-us-right .tag",{
-  scale:0,
-  y:-100,
-  duration:1,
-  stagger:{each: .3},
+  opacity:0,
+  y:100,
+  duration:.1,
+  stagger:{each: .2},
 },{
-  scale:1,
-  duration:1,
+  opacity:1,
+  duration:.5,
   y:0,
-  stagger:{each: .3},
+  stagger:{each: .2},
   scrollTrigger:{
     scroller:"body",
-    trigger:".abt-us-left",
+    trigger:".tag",
     start: "top 75%",
     end: "top 60%",
-    scrub:4
+    scrub:2
+  },
+})
+gsap.fromTo(".abt-us-right .about",{
+  opacity:0,
+  y:100,
+  duration:.1,
+  stagger:{each: .2},
+},{
+  opacity:1,
+  duration:.5,
+  y:0,
+  stagger:{each: .2},
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".about",
+    start: "top 65%",
+    end: "top 55%",
+    scrub:2
   },
 })
 
-// Splitting();
-// const target = document.querySelector('.intro');
-// const results = Splitting({ target: target, by: 'lines' });
-// gsap.from(".lines",{
-//   opacity:0,
-//   x:100,
-//   duration:0.05,
+gsap.from(".section3",{
+  x:-1000,
+  opacity:0,
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section3",
+    // markers:true,    
+    start: "top 90%",
+    end: "top 40%",
+    scrub:2,
+  },
 
-// })
+})
+gsap.from(".section3 h2 , .section3 .grid-item",{
+  opacity:0,
+  stagger:{each:0.5},
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section3 , .section3 .grid-item",
+    // markers:true,    
+    start: "top 40%",
+    end: "top 30%",
+    scrub:1,
+  },
+})
+
+const eventsH2 = document.querySelector('#events h2');
+const results1 = Splitting({ target: eventsH2, by: 'chars' });
+gsap.fromTo(".events .char",{
+  opacity:0,
+  y:80,
+  duration:0.05,
+  ease:"bounce",
+  stagger:{each:0.05},
+  scrollTrigger: {
+    trigger: ".events .char",
+    scroller: "body",
+    // markers: true,
+    start: "top 80%",
+    end: "top 65%",
+    scrub:2
+  },
+},{
+  opacity:1,
+  y:0,
+  duration:0.05,
+  stagger:{each:0.05},
+  scrollTrigger: {
+    trigger: ".events .char",
+    scroller: "body",
+    // markers: true,
+    start: "top 85%",
+    end: "top 65%",
+    scrub:2
+  },
+})
+

@@ -246,12 +246,22 @@ body {
 }
 .section2 h2,.section4 h2,.section7 h2,.section8 h2,
 .section3 h2,.section5 h2, .section6 h2{
-  font-size: 4rem;
+  font-size: 4.2rem;
   font-family: "Playfair Display", serif;
   font-weight: 900;
   margin-bottom: 2rem;
   color: var(--yellow);
   text-align: center;
+}
+.section2 h2 span.char, .section8 h2 span.char {
+  font-family: "Playfair Display", serif;
+
+}
+.section2 p span {
+  color: var(--btn-yellow);
+  font-family: "Kaushan Script", cursive;
+  font-weight: 500;
+  font-size: 2.2rem;
 }
 .section2 p span {
   color: var(--btn-yellow);
@@ -357,7 +367,7 @@ display: flex;
   width: 100%;
   column-gap: 50px;
 }
-.details *{
+.details p{
   width: 400px;
 }
 

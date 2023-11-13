@@ -153,7 +153,7 @@ window.addEventListener("load", function () {
 
 setInterval(function () {
   var abtRight = document.querySelector(".abt-us-right").clientWidth;
-  document.querySelectorAll(".details *").forEach((detail) => {
+  document.querySelectorAll(".details p").forEach((detail) => {
     // console.log(detail.style)
     detail.style.width = `${abtRight - 45}px`;
   });
@@ -182,7 +182,7 @@ selectedItem.forEach(function (selected) {
     });
   });
 });
-
+// ---------height of the right abt us 
 var aboutHeight = document.querySelector(".about").clientHeight;
 setInterval(function () {
   var aboutHeight = document.querySelector(".about").clientHeight;
