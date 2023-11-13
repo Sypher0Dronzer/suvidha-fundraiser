@@ -1,8 +1,12 @@
 // navbar animation
 gsap.registerPlugin(ScrollTrigger);
-gsap.from("nav img", {
+gsap.fromTo("nav img", {
   y: -400,
   opacity: 0,
+  duration: 0.7,
+},{
+  y: 0,
+  opacity: 1,
   duration: 0.7,
 });
 gsap.fromTo(
@@ -35,9 +39,13 @@ gsap.fromTo(
 );
 
 // titl box animation
-gsap.from(".title-box h1", {
+gsap.fromTo(".title-box h1", {
   opacity: 0,
   x: -800,
+  duration: 0.8,
+},{
+  opacity: 1,
+  x:0,
   duration: 0.8,
 });
 gsap.from(".title-box h2", {
@@ -45,9 +53,13 @@ gsap.from(".title-box h2", {
   x: 800,
   duration: 0.8,
 });
-gsap.from(".title-box p", {
+gsap.fromTo(".title-box p", {
   opacity: 0,
-  y: 400,
+  y: 200,
+  duration: 0.8,
+},{
+  opacity: 1,
+  y: 0,
   duration: 0.8,
 });
 gsap.fromTo(".title-box .btn-div a,.title-box .btn-div button", {
@@ -172,8 +184,20 @@ gsap.from(".section3",{
     scrub:2,
   },
 
+},{
+  x:0,
+  opacity:1,
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section3",
+    // markers:true,    
+    start: "top 90%",
+    end: "top 40%",
+    scrub:2,
+  },
+
 })
-gsap.from(".section3 h2 ",{
+gsap.fromTo(".section3 h2 ",{
   opacity:0,
   scrollTrigger:{
     scroller:"body",
@@ -183,9 +207,30 @@ gsap.from(".section3 h2 ",{
     end: "top 30%",
     scrub:1,
   },
+},{
+  opacity:1,
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section3 ",
+    // markers:true,    
+    start: "top 50%",
+    end: "top 30%",
+    scrub:1,
+  },
 })
-gsap.from(".section3 .grid-item",{
+gsap.fromTo(".section3 .grid-item",{
   opacity:0,
+  stagger:  {each:0.5 },
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".grid-item",
+    // markers:true,    
+    start: "top 50%",
+    end: "top 30%",
+    scrub:1,
+  },
+},{
+  opacity:1,
   stagger:  {each:0.5 },
   scrollTrigger:{
     scroller:"body",
@@ -229,9 +274,21 @@ gsap.fromTo(".events .char",{
   },
 })
 
-gsap.from(".section8 .event",{
+gsap.fromTo(".section8 .event",{
   opacity:0,
   y:50,
+  stagger:{each:1},
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section8 .event",    
+    // markers:true,
+    start: "top 60%",
+    end: "top 30%",
+    scrub:1,
+  }
+},{
+  opacity:1,
+  y:0,
   stagger:{each:1},
   scrollTrigger:{
     scroller:"body",
@@ -244,7 +301,7 @@ gsap.from(".section8 .event",{
 })
 
 
-gsap.from(".section4",{
+gsap.fromTo(".section4",{
   x:-1000,
   opacity:0,
   scrollTrigger:{
@@ -256,11 +313,34 @@ gsap.from(".section4",{
     scrub:2,
   },
 
+},{
+  x:0,
+  opacity:1,
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section4",
+    // markers:true,    
+    start: "top 90%",
+    end: "top 40%",
+    scrub:2,
+  },
+
 })
 
-gsap.from(".section4 h2",{
+gsap.fromTo(".section4 h2",{
   opacity:0,
-  x:-150,
+  x:-100,
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section4 h2",
+    // markers:true,    
+    start: "top 45%",
+    end: "top 30%",
+    scrub:1,
+  },
+},{
+  opacity:1,
+  x:0,
   scrollTrigger:{
     scroller:"body",
     trigger:".section4 h2",
@@ -270,7 +350,7 @@ gsap.from(".section4 h2",{
     scrub:1,
   },
 })
-gsap.from(".section4 .flex-item-box",{
+gsap.fromTo(".section4 .flex-item-box",{
   opacity:0,
   x:-150,
   stagger:{each:.8},
@@ -282,17 +362,41 @@ gsap.from(".section4 .flex-item-box",{
     end: "top 30%",
     scrub:1,
   },
+},{
+  opacity:1,
+  stagger:{each:.8},
+  x:0,
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section4 h2",
+    // markers:true,    
+    start: "top 45%",
+    end: "top 30%",
+    scrub:1,
+  },
 })
-gsap.from(".section4 .flex-item-box i",{
-  opacity:0,
+gsap.fromTo(".section4 .flex-item-box i",{
+  scale:0,
   stagger:{each:1},
   scrollTrigger:{
     scroller:"body",
     trigger:".section4 .flex-item-box i",
-    markers:true,    
-    start: "top 45%",
-    end: "top 25%",
+    // markers:true,    
+    start: "top 65%",
+    end: "top 40%",
+    scrub:1,
+  },
+},{
+  scale:1,
+  stagger:{each:1},
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section4 .flex-item-box i",
+    // markers:true,    
+    start: "top 65%",
+    end: "top 40%",
     scrub:1,
   },
 })
+
 
