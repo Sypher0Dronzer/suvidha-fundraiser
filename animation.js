@@ -173,14 +173,25 @@ gsap.from(".section3",{
   },
 
 })
-gsap.from(".section3 h2 , .section3 .grid-item",{
+gsap.from(".section3 h2 ",{
   opacity:0,
-  stagger:{each:0.5},
   scrollTrigger:{
     scroller:"body",
-    trigger:".section3 , .section3 .grid-item",
+    trigger:".section3 ",
     // markers:true,    
-    start: "top 40%",
+    start: "top 50%",
+    end: "top 30%",
+    scrub:1,
+  },
+})
+gsap.from(".section3 .grid-item",{
+  opacity:0,
+  stagger:  {each:0.5 },
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".grid-item",
+    // markers:true,    
+    start: "top 50%",
     end: "top 30%",
     scrub:1,
   },
@@ -247,13 +258,25 @@ gsap.from(".section4",{
 
 })
 
-gsap.from(".section4 h2 , .section4 .flex-item-box",{
+gsap.from(".section4 h2",{
   opacity:0,
   x:-150,
-  stagger:{each:1},
   scrollTrigger:{
     scroller:"body",
-    trigger:".section4 h2 , .section4 .flex-item-box",
+    trigger:".section4 h2",
+    // markers:true,    
+    start: "top 45%",
+    end: "top 30%",
+    scrub:1,
+  },
+})
+gsap.from(".section4 .flex-item-box",{
+  opacity:0,
+  x:-150,
+  stagger:{each:.8},
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".section4 .flex-item-box",
     // markers:true,    
     start: "top 45%",
     end: "top 30%",
