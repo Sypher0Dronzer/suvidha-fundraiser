@@ -6,7 +6,7 @@ gsap.from("nav img", {
   duration: 0.7,
 });
 gsap.fromTo(
-  ".nav-item",
+  ".nav-item, .menu",
   {
     y:-300,
     opacity: 0,
