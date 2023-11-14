@@ -177,7 +177,7 @@ mm.add("(min-width: 800px)",()=>{
   })
   
   gsap.fromTo(".section3",{
-    x:-1000,
+    y:500,
     opacity:0,
     scrollTrigger:{
       scroller:"body",
@@ -189,7 +189,7 @@ mm.add("(min-width: 800px)",()=>{
     },
   
   },{
-    x:0,
+    y:0,
     opacity:1,
     scrollTrigger:{
       scroller:"body",
@@ -202,24 +202,24 @@ mm.add("(min-width: 800px)",()=>{
   
   })
   gsap.fromTo(".section3",{
-    x:0,
+    y:0,
     opacity:1,
     scrollTrigger:{
       scroller:"body",
       trigger:".section3",
-      markers:true,    
+      // markers:true,    
       start: "top -20%",
       end: "top -50%",
       scrub:2,
     },
   
   },{
-    x:1000,
+    y:-300,
     opacity:0,
     scrollTrigger:{
       scroller:"body",
       trigger:".section3",
-      markers:true,    
+      // markers:true,    
       start: "top -19%",
       end: "top -50%",
       scrub:2,
@@ -267,6 +267,31 @@ mm.add("(min-width: 800px)",()=>{
       // markers:true,    
       start: "top 50%",
       end: "top 30%",
+      scrub:1,
+    },
+  })
+  gsap.fromTo(".section3 .grid-item",{
+    opacity:1,
+    y:0,
+    stagger:  {each:0.5 },
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".grid-item",
+      // markers:true,    
+      start: "top -20%",
+      end: "top -70%",
+      scrub:1,
+    },
+  },{
+    opacity:0,
+    y:-200,
+    stagger:  {each:0.5 },
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".grid-item",
+      // markers:true,    
+      start: "top -20%",
+      end: "top -70%",
       scrub:1,
     },
   })
@@ -361,7 +386,7 @@ mm.add("(min-width: 800px)",()=>{
     scrollTrigger:{
       scroller:"body",
       trigger:".section4",
-      markers:true,    
+      // markers:true,    
       start: "top -20%%",
       end: "top -40%",
       scrub:2,
@@ -373,7 +398,7 @@ mm.add("(min-width: 800px)",()=>{
     scrollTrigger:{
       scroller:"body",
       trigger:".section4",
-      markers:true,    
+      // markers:true,    
       start: "top -19%",
       end: "top -50%",
       scrub:2,
@@ -626,6 +651,14 @@ mm.add("(min-width: 800px)",()=>{
       scrub:1,
     },
   })
+
+})
+
+gsap.from(".back-to-top",{
+  repeat:-1,
+  duration:.8,
+  width:60.23,
+  height:62.93
 
 })
 
