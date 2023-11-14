@@ -176,7 +176,7 @@ mm.add("(min-width: 800px)",()=>{
     },
   })
   
-  gsap.from(".section3",{
+  gsap.fromTo(".section3",{
     x:-1000,
     opacity:0,
     scrollTrigger:{
@@ -197,6 +197,31 @@ mm.add("(min-width: 800px)",()=>{
       // markers:true,    
       start: "top 90%",
       end: "top 40%",
+      scrub:2,
+    },
+  
+  })
+  gsap.fromTo(".section3",{
+    x:0,
+    opacity:1,
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".section3",
+      markers:true,    
+      start: "top -20%",
+      end: "top -50%",
+      scrub:2,
+    },
+  
+  },{
+    x:1000,
+    opacity:0,
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".section3",
+      markers:true,    
+      start: "top -19%",
+      end: "top -50%",
       scrub:2,
     },
   
@@ -330,6 +355,31 @@ mm.add("(min-width: 800px)",()=>{
     },
   
   })
+  gsap.fromTo(".section4",{
+    y:0,
+    opacity:1,
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".section4",
+      markers:true,    
+      start: "top -20%%",
+      end: "top -40%",
+      scrub:2,
+    },
+  
+  },{
+    y:-100,
+    opacity:0,
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".section4",
+      markers:true,    
+      start: "top -19%",
+      end: "top -50%",
+      scrub:2,
+    },
+  
+  })
   
   gsap.fromTo(".section4 h2",{
     opacity:0,
@@ -407,6 +457,31 @@ mm.add("(min-width: 800px)",()=>{
   // ------------------Our team------------
   const teamH2 = document.querySelector('.section7 h2');
   const results4 = Splitting({ target: teamH2, by: 'chars' });
+  gsap.fromTo(".section5",{
+    y:0,
+    opacity:1,
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".section5",
+      // markers:true,    
+      start: "top -20%%",
+      end: "top -40%",
+      scrub:2,
+    },
+  
+  },{
+    y:-100,
+    opacity:0,
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".section5",
+      // markers:true,    
+      start: "top -19%",
+      end: "top -50%",
+      scrub:2,
+    },
+  
+  })
   gsap.fromTo(".section7 .char",{
     opacity:0,
     rotate:360,
@@ -444,7 +519,7 @@ mm.add("(min-width: 800px)",()=>{
     y:300,
     stagger:{each:0.5},
     scrollTrigger: {
-      trigger: ".flex-team *",
+      trigger: ".flex-team",
       scroller: "body",
       // markers: true,
       start: "top 80%",
@@ -456,7 +531,7 @@ mm.add("(min-width: 800px)",()=>{
     y:0,
     stagger:{each:0.5},
     scrollTrigger: {
-      trigger: ".flex-team *",
+      trigger: ".flex-team",
       scroller: "body",
       // markers: true,
       start: "top 80%",
@@ -496,6 +571,59 @@ mm.add("(min-width: 800px)",()=>{
       start: "top 85%",
       end: "top 65%",
       scrub:2
+    },
+  })
+
+  gsap.fromTo(".section5",{
+    x:-1000,
+    opacity:0,
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".section5",
+      // markers:true,    
+      start: "top 90%",
+      end: "top 40%",
+      scrub:2,
+    },
+  
+  },{
+    x:0,
+    opacity:1,
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".section5",
+      // markers:true,    
+      start: "top 90%",
+      end: "top 40%",
+      scrub:2,
+    },
+  
+  })
+
+
+  gsap.fromTo(".section5 .mySwiper3 ",{
+    opacity:0,
+    y:200,
+    stagger:  {each:0.5 },
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".section5 .mySwiper3 ",
+      // markers:true,   
+      start: "top 70%",
+      end: "top 40%",
+      scrub:1,
+    },
+  },{
+    opacity:1,
+    y:0,
+    stagger:  {each:0.5 },
+    scrollTrigger:{
+      scroller:"body",
+      trigger:".section5 .mySwiper3 ",
+      // markers:true,    
+      start: "top 70%",
+      end: "top 40%",
+      scrub:1,
     },
   })
 
