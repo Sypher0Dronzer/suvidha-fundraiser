@@ -400,3 +400,63 @@ gsap.fromTo(".section4 .flex-item-box i",{
 })
 
 
+// ------------------Our team------------
+const teamH2 = document.querySelector('.section7 h2');
+const results4 = Splitting({ target: teamH2, by: 'chars' });
+gsap.fromTo(".section7 .char",{
+  opacity:0,
+  rotate:360,
+  x:200,
+  duration:0.05,
+  stagger:{each:0.05},
+  scrollTrigger: {
+    trigger: ".section7 .char",
+    scroller: "body",
+    // markers: true,
+    start: "top 80%",
+    end: "top 65%",
+    scrub:2
+  },
+},{
+  opacity:1,
+  x:0,
+  rotate:0,
+  duration:0.05,
+  ease:"bounce",
+
+  stagger:{each:0.05},
+  scrollTrigger: {
+    trigger: ".section7 .char",
+    scroller: "body",
+    // markers: true,
+    start: "top 85%",
+    end: "top 65%",
+    scrub:2
+  },
+})
+
+gsap.fromTo(".flex-team",{
+  opacity:0,
+  y:300,
+  stagger:{each:0.5},
+  scrollTrigger: {
+    trigger: ".flex-team *",
+    scroller: "body",
+    // markers: true,
+    start: "top 80%",
+    end: "top 65%",
+    scrub:2
+  },
+},{
+  opacity:1,
+  y:0,
+  stagger:{each:0.5},
+  scrollTrigger: {
+    trigger: ".flex-team *",
+    scroller: "body",
+    // markers: true,
+    start: "top 70%",
+    end: "top 45%",
+    scrub:2
+  },
+})

@@ -253,7 +253,7 @@ body {
   color: var(--yellow);
   text-align: center;
 }
-.section2 h2 span.char, .section8 h2 span.char {
+.section2 h2 span.char, .section8 h2 span.char,.section7 h2 span.char {
   font-family: "Playfair Display", serif;
 
 }
