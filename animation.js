@@ -1,7 +1,8 @@
 // navbar animation
 gsap.registerPlugin(ScrollTrigger);
 
-let mm = gsap.matchMedia();
+if(navigator.userAgent.search("Firefox") < 0){
+  let mm = gsap.matchMedia();
  
 mm.add("(min-width: 800px)",()=>{
   gsap.fromTo("nav img", {
@@ -653,6 +654,9 @@ mm.add("(min-width: 800px)",()=>{
   })
 
 })
+
+}
+
 
 gsap.from(".back-to-top",{
   repeat:-1,
