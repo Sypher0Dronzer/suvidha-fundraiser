@@ -33,6 +33,8 @@
 }
 .video-player i:hover{
     color: var(--yellow);
+    font-size: 40px;
+    rotate: 90deg;
 }
 
 /* ----------responsive----------- */
