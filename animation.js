@@ -753,11 +753,17 @@ if (navigator.userAgent.search("Firefox") < 0) {
       }
     );
   });
+  gsap.from(".back-to-top", {
+    repeat: -1,
+    duration: 0.8,
+    width: 60.23,
+    height: 62.93,
+  });
 }
 
-gsap.from(".back-to-top", {
-  repeat: -1,
-  duration: 0.8,
-  width: 60.23,
-  height: 62.93,
-});
+// gsap.from(".back-to-top", {
+//   repeat: -1,
+//   duration: 0.8,
+//   width: 60.23,
+//   height: 62.93,
+// });
