@@ -251,8 +251,8 @@ if (navigator.userAgent.search("Firefox") < 0) {
           scroller: "body",
           trigger: ".section3",
           // markers:true,
-          start: "top -19%",
-          end: "top -50%",
+          start: "top -15%",
+          end: "top -60%",
           scrub: 2,
         },
       }
@@ -634,7 +634,7 @@ if (navigator.userAgent.search("Firefox") < 0) {
           scroller: "body",
           // markers: true,
           start: "top 80%",
-          end: "top 60%",
+          end: "top 70%",
           scrub: 2,
         },
       }
@@ -745,7 +745,7 @@ if (navigator.userAgent.search("Firefox") < 0) {
         scrollTrigger: {
           scroller: "body",
           trigger: "footer",
-          markers:true,
+          // markers:true,
           start: "top 90%",
           end: "top 70%",
           scrub: 1,
